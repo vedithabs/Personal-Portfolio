@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veditha Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            background: #ffffff;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(to right, #1e90ff, #87ceeb);
+            color: white;
+            padding: 20px 10%;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            animation: fadeInDown 1s ease;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 600;
+            padding: 8px 15px;
+            border: 2px solid white;
+            border-radius: 20px;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        nav a:hover {
+            background: white;
+            color: #1e90ff;
+        }
+
+        section {
+            padding: 40px 10%;
+            text-align: center;
+        }
+
+        .about {
+            background-color: #f9f9f9;
+        }
+
+        .education {
+            background-color: #ffffff;
+        }
+
+        .skills {
+            background-color: #f9f9f9;
+        }
+
+        .contact {
+            background-color: #ffffff;
+        }
+
+        .about img {
+            max-width: 150px;
+            border-radius: 50%;
+            margin: 20px auto;
+            display: block;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            animation: zoomIn 1.5s ease;
+        }
+
+        .skills ul {
+            list-style-type: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .skills ul li {
+            background-color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            font-weight: bold;
+            font-size: 1rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .skills ul li:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer a {
+            color: #87ceeb;
+            font-size: 0.9rem;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        h2 {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        p, h5, h6 {
+            font-size: 1rem;
+            animation: fadeIn ease;
+        }
+
+        h5 {
+            font-weight: 600;
+        }
+
+        h6 {
+            font-weight: 400;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes zoomIn {
+            from {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInLeft {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Welcome To My Personal Portfolio</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <img src="./WhatsApp Image 2025-01-08 at 23.01.38.jpeg" alt="Shreyas Photo">
+        <p>Hi, I'm Veditha, a computer science student driven by a passion for technology and innovation. My academic journey has provided me with a strong foundation in programming, algorithms, and software development. I thrive on solving complex problems and continuously seek opportunities to enhance my skills through hands-on projects and collaborations. As I advance in my studies, I am eager to explore emerging fields in computer science, particularly artificial intelligence and web development, where I can apply my expertise to build impactful solutions.</p>
+    </section>
+
+    <section id="education" class="education">
+        <h2>Education</h2>
+        <h5>Bachelor of Technology in Computer Science</h5>
+        <h6>Malnad Institute Of Technology [2022 - Present]</h6>
+        <h6>Hassan</h6>
+        <h5>Pre University Course</h5>
+        <h6>Masters PU College </h6>
+        <h6>Hassan</h6>
+        <h5>S.S.L.C</h5>
+        <h6>Royale Apollo English School</h6>
+        <h6>Hassan</h6>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Data Structures and Algorithms</li>
+            <li>Operating Systems</li>
+            <li>Computer Networks</li>
+            <li>Problem Solving Techniques Using C</li>
+            <li>Object Oriented Programming</li>
+            <li>Computer Graphics</li>
+            <li>Python</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Node.js</li>
+            <li>Java</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:Shreyasgowda0721@gmail.com">Shreyasgowda0721@gmail.com</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; <?php echo date("Y"); ?>P O R T F O L I O</p>
+    </footer>
+
+</body>
+</html>
